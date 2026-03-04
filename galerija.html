@@ -62,6 +62,18 @@
             border-radius: 0.75rem;
             object-fit: contain;
         }
+        /* Dodatno za navigacione strelica */
+        .nav-arrow {
+            transition: all 0.2s ease;
+        }
+        .nav-arrow:hover {
+            transform: scale(1.15);
+        }
+        @media (max-width: 640px) {
+            .nav-arrow {
+                font-size: 3.5rem !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-slate-950 text-gray-100 overflow-x-hidden">
@@ -73,8 +85,7 @@
                 <div class="flex items-center space-x-3">
                     <a href="index.html" class="flex items-center space-x-3">
                         <img src="logo.png" alt="Auto Paint Centar Logo" class="h-32 w-auto object-contain rounded">
-                    <span class="font-display text-xl font-bold text-white tracking-wide">AUTO PAINT <span
-                            class="text-blue-600">CENTAR</span></span>
+                    <span class="font-display text-xl font-bold text-white tracking-wide">AUTO PAINT <span class="text-blue-600">CENTAR</span></span>
                     </a>
                 </div>
                 
@@ -142,61 +153,49 @@
 
                 <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer aspect-[4/3]" data-category="bodywork">
                     <video class="w-full h-full object-cover" muted loop playsinline>
-                        <source src="1.mp4#t=1" type="video/mp4">
+                        <source src="1.mp4#t=0.5" type="video/mp4">
                     </video>
-                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <!-- <span class="text-blue-200 text-sm font-medium mb-1">Kompletno Farbanje</span> -->
-                    </div>
+                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"></div>
                     <div class="video-badge"><i data-lucide="play" class="w-6 h-6"></i></div>
                 </div>
 
                 <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer aspect-[4/3]" data-category="bodywork">
                     <video class="w-full h-full object-cover" muted loop playsinline>
-                        <source src="2.mp4#t=1" type="video/mp4">
+                        <source src="2.mp4#t=0.5" type="video/mp4">
                     </video>
-                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <!-- <span class="text-blue-200 text-sm font-medium mb-1">Kompletno Farbanje</span> -->
-                    </div>
+                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"></div>
                     <div class="video-badge"><i data-lucide="play" class="w-6 h-6"></i></div>
                 </div>
 
                 <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer aspect-[4/3]" data-category="bodywork">
                     <video class="w-full h-full object-cover" muted loop playsinline>
-                        <source src="3.mp4#t=1" type="video/mp4">
+                        <source src="3.mp4#t=0.5" type="video/mp4">
                     </video>
-                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <!-- <span class="text-blue-200 text-sm font-medium mb-1">Kompletno Farbanje</span> -->
-                    </div>
+                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"></div>
                     <div class="video-badge"><i data-lucide="play" class="w-6 h-6"></i></div>
                 </div>
 
                 <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer aspect-[4/3]" data-category="bodywork">
                     <video class="w-full h-full object-cover" muted loop playsinline>
-                        <source src="4.mp4#t=1" type="video/mp4">
+                        <source src="4.mp4#t=0.5" type="video/mp4">
                     </video>
-                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <!-- <span class="text-blue-200 text-sm font-medium mb-1">Kompletno Farbanje</span> -->
-                    </div>
+                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"></div>
                     <div class="video-badge"><i data-lucide="play" class="w-6 h-6"></i></div>
                 </div>
 
                 <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer aspect-[4/3]" data-category="bodywork">
                     <video class="w-full h-full object-cover" muted loop playsinline>
-                        <source src="5.mp4#t=1" type="video/mp4">
+                        <source src="5.mp4#t=0.5" type="video/mp4">
                     </video>
-                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <!-- <span class="text-blue-200 text-sm font-medium mb-1">Kompletno Farbanje</span> -->
-                    </div>
+                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"></div>
                     <div class="video-badge"><i data-lucide="play" class="w-6 h-6"></i></div>
                 </div>
 
                 <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer aspect-[4/3]" data-category="bodywork">
                     <video class="w-full h-full object-cover" muted loop playsinline>
-                        <source src="6.mp4#t=1" type="video/mp4">
+                        <source src="6.mp4#t=0.5" type="video/mp4">
                     </video>
-                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <!-- <span class="text-blue-200 text-sm font-medium mb-1">Kompletno Farbanje</span> -->
-                    </div>
+                    <div class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"></div>
                     <div class="video-badge"><i data-lucide="play" class="w-6 h-6"></i></div>
                 </div>
 
@@ -210,11 +209,20 @@
         </div>
     </section>
 
-    <!-- Lightbox -->
+    <!-- Lightbox sa navigacijom -->
     <div id="lightbox" class="lightbox">
-        <button class="absolute top-5 right-5 text-white text-5xl hover:text-blue-400 z-50" onclick="closeLightbox()">
+        <button id="closeLightboxBtn" class="absolute top-5 right-5 text-white text-5xl hover:text-blue-400 z-50" onclick="closeLightbox()">
             <i data-lucide="x"></i>
         </button>
+
+        <!-- Navigacione strelica -->
+        <button id="lightbox-prev" class="nav-arrow absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 text-white text-6xl sm:text-7xl hover:text-blue-400 z-50 opacity-80 hover:opacity-100 transition-all">
+            <i data-lucide="chevron-left"></i>
+        </button>
+        <button id="lightbox-next" class="nav-arrow absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 text-white text-6xl sm:text-7xl hover:text-blue-400 z-50 opacity-80 hover:opacity-100 transition-all">
+            <i data-lucide="chevron-right"></i>
+        </button>
+
         <img id="lightbox-img" class="lightbox-content hidden" alt="">
         <video id="lightbox-video" class="lightbox-content hidden" controls autoplay></video>
     </div>
@@ -318,10 +326,21 @@
             }
         });
 
-        // Lightbox functions
-        function openLightbox(el) {
-            const img   = el.querySelector('img');
-            const video = el.querySelector('video');
+        // ────────────────────────────────────────────────
+        //          LIGHTBOX SA NAVIGACIJOM
+        // ────────────────────────────────────────────────
+
+        let currentIndex = 0;
+        const galleryItems = document.querySelectorAll('#gallery-grid .gallery-item');
+
+        function showItem(index) {
+            if (index < 0 || index >= galleryItems.length) return;
+
+            currentIndex = index;
+            const item = galleryItems[index];
+
+            const img   = item.querySelector('img');
+            const video = item.querySelector('video');
             const lb    = document.getElementById('lightbox');
             const lbImg = document.getElementById('lightbox-img');
             const lbVid = document.getElementById('lightbox-video');
@@ -342,7 +361,6 @@
                     lbVid.load();
                     lbVid.play().catch(() => {});
 
-                    // Bonus: pokušaj fullscreen na mobilnom za video
                     if (lbVid.requestFullscreen && /Mobi|Android/i.test(navigator.userAgent)) {
                         lbVid.requestFullscreen().catch(() => {});
                     }
@@ -353,6 +371,16 @@
 
             lb.classList.add('active');
             document.body.style.overflow = 'hidden';
+
+            // Ažuriraj vidljivost strelica
+            document.getElementById('lightbox-prev').style.opacity = index === 0 ? '0.3' : '0.8';
+            document.getElementById('lightbox-next').style.opacity = index === galleryItems.length - 1 ? '0.3' : '0.8';
+        }
+
+        function openLightbox(el) {
+            const items = Array.from(galleryItems);
+            currentIndex = items.indexOf(el);
+            showItem(currentIndex);
         }
 
         function closeLightbox() {
@@ -367,16 +395,56 @@
             }
         }
 
-        // Zatvaranje klikom na pozadinu (radi i na telefonu)
+        // Klik na pozadinu zatvara
         document.getElementById('lightbox').addEventListener('click', e => {
             if (e.target === document.getElementById('lightbox')) {
                 closeLightbox();
             }
         });
 
-        // Escape taster
+        // Escape zatvara
         document.addEventListener('keydown', e => {
-            if (e.key === 'Escape') closeLightbox();
+            if (!document.getElementById('lightbox').classList.contains('active')) return;
+
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowLeft') {
+                showItem(currentIndex - 1);
+            } else if (e.key === 'ArrowRight') {
+                showItem(currentIndex + 1);
+            }
+        });
+
+        // Strelica levo / desno
+        document.getElementById('lightbox-prev')?.addEventListener('click', () => {
+            showItem(currentIndex - 1);
+        });
+
+        document.getElementById('lightbox-next')?.addEventListener('click', () => {
+            showItem(currentIndex + 1);
+        });
+
+        // Swipe podrška na telefonu
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.getElementById('lightbox')?.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.getElementById('lightbox')?.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+
+            if (Math.abs(diff) > 60) { // prag za swipe
+                if (diff > 0) {
+                    // swipe levo → sledeći
+                    showItem(currentIndex + 1);
+                } else {
+                    // swipe desno → prethodni
+                    showItem(currentIndex - 1);
+                }
+            }
         });
 
         // Delegacija klikova na galerijske stavke
